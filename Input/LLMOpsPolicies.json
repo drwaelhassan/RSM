@@ -1,0 +1,407 @@
+{
+  "policies": [
+    {
+      "subject": {
+        "type": "general_knowledge"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["education", "research", "information_dissemination"],
+        "denied_purposes": ["unauthorized_reproduction_for_commercial_gain", "misinformation_dissemination"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "news_articles"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["news_reporting", "analysis", "education"],
+        "denied_purposes": ["fabrication_or_dissemination_of_fake_news", "incitement_of_violence_or_hate_speech"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "literature"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["education", "literary_analysis", "creative_inspiration"],
+        "denied_purposes": ["plagiarism", "unauthorized_commercial_use"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "social_media"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["research", "trend_analysis", "understanding_informal_language"],
+        "denied_purposes": ["targeted_harassment", "spreading_disinformation", "violating_privacy_rights"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "technical_documents"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["research", "education", "professional_development"],
+        "denied_purposes": ["unauthorized_use_for_commercial_gain", "reverse_engineering_for_malicious_purposes"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "dialogues_and_conversations"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["linguistic_analysis", "conversational_AI_development", "research"],
+        "denied_purposes": ["invasion_of_privacy", "unauthorized_recording_or_sharing_of_personal_conversations"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "instructional_materials"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["education", "training", "skill_development"],
+        "denied_purposes": ["unauthorized_commercial_use", "plagiarism"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "websites_and_blogs"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["research", "education", "content_analysis"],
+        "denied_purposes": ["unauthorized_reproduction_for_commercial_gain", "plagiarism", "spreading_malware"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "legal_documents"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["legal_research", "education", "compliance"],
+        "denied_purposes": ["unauthorized_dissemination", "misrepresentation", "violating_attorney-client_privilege"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "multimedia_transcripts"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["research", "education", "accessibility"],
+        "denied_purposes": ["unauthorized_reproduction_for_commercial_gain", "copyright_infringement"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "scientific_papers"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["research", "education", "advancing_scientific_knowledge"],
+        "denied_purposes": ["plagiarism", "fraudulent_publication", "misrepresentation_of_findings"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "financial_reports"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["financial_analysis", "investment_research", "regulatory_compliance"],
+        "denied_purposes": ["insider_trading", "financial_fraud", "unauthorized_dissemination_of_confidential_information"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+      }
+    },
+    {
+      "subject": {
+        "type": "healthcare_records"
+      },
+      "verb": "read",
+      "object": {
+        "type": "purpose",
+        "allowed_purposes": ["medical_research", "patient_care", "healthcare_policy_development"],
+        "denied_purposes": ["violation_of_patient_privacy", "medical_malpractice", "unauthorized_access_to_sensitive_information"],
+        "processing_types": ["simple_concatenation", "feature-based_combination", "model_ensembles", "multi-task_learning"]
+{
+  "policies": [
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "General Knowledge"
+      },
+      "allowable_purposes": ["Education", "Research", "Information dissemination"],
+      "denied_purposes": ["Unauthorized reproduction for commercial gain", "Misinformation dissemination"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "News Articles"
+      },
+      "allowable_purposes": ["News reporting", "Analysis", "Education"],
+      "denied_purposes": ["Fabrication or dissemination of fake news", "Incitement of violence or hate speech"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Literature"
+      },
+      "allowable_purposes": ["Education", "Literary analysis", "Creative inspiration"],
+      "denied_purposes": ["Plagiarism", "Unauthorized commercial use"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Social Media"
+      },
+      "allowable_purposes": ["Research", "Trend analysis", "Understanding informal language"],
+      "denied_purposes": ["Targeted harassment", "Spreading disinformation", "Violating privacy rights"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Technical Documents"
+      },
+      "allowable_purposes": ["Research", "Education", "Professional development"],
+      "denied_purposes": ["Unauthorized use for commercial gain", "Reverse engineering for malicious purposes"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Dialogues and Conversations"
+      },
+      "allowable_purposes": ["Linguistic analysis", "Conversational AI development", "Research"],
+      "denied_purposes": ["Invasion of privacy", "Unauthorized recording or sharing of personal conversations"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Instructional Materials"
+      },
+      "allowable_purposes": ["Education", "Training", "Skill development"],
+      "denied_purposes": ["Unauthorized commercial use", "Plagiarism"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Websites and Blogs"
+      },
+      "allowable_purposes": ["Research", "Education", "Content analysis"],
+      "denied_purposes": ["Unauthorized reproduction for commercial gain", "Plagiarism", "Spreading malware"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Legal Documents"
+      },
+      "allowable_purposes": ["Legal research", "Education", "Compliance"],
+      "denied_purposes": ["Unauthorized dissemination", "Misrepresentation", "Violating attorney-client privilege"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Multimedia Transcripts"
+      },
+      "allowable_purposes": ["Research", "Education", "Accessibility"],
+      "denied_purposes": ["Unauthorized reproduction for commercial gain", "Copyright infringement"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Scientific Papers"
+      },
+      "allowable_purposes": ["Research", "Education", "Advancing scientific knowledge"],
+      "denied_purposes": ["Plagiarism", "Fraudulent publication", "Misrepresentation of findings"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Financial Reports"
+      },
+      "allowable_purposes": ["Financial analysis", "Investment research", "Regulatory compliance"],
+      "denied_purposes": ["Insider trading", "Financial fraud", "Unauthorized dissemination of confidential information"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Healthcare Records"
+      },
+      "allowable_purposes": ["Medical research", "Patient care", "Healthcare policy development"],
+      "denied_purposes": ["Violation of patient privacy", "Medical malpractice", "Unauthorized access to sensitive information"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Academic Journals"
+      },
+      "allowable_purposes": ["Research", "Scholarly communication", "Academic discourse"],
+      "denied_purposes": ["Plagiarism", "Academic misconduct", "Fraudulent publication"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Historical Documents"
+      },
+      "allowable_purposes": ["Historical research", "Education", "Preservation of cultural heritage"],
+      "denied_purposes": ["Fabrication of historical narratives", "Distortion of historical facts", "Cultural appropriation"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "subject": {
+        "type": "purpose",
+        "name": "Government Publications"
+      },
+      "allowable_purposes": ["Policy analysis", "Public information dissemination", "Governmental transparency"],
+      "denied_purposes": ["Misrepresentation of government policies", "Dissemination of classified information", "Undermining national security"],
+      "processing_types":
+{
+  "policies": [
+    {
+      "purpose": "General Knowledge",
+      "allowable_purposes": ["Education", "Research", "Information dissemination"],
+      "denied_purposes": ["Unauthorized reproduction for commercial gain", "Misinformation dissemination"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "News Articles",
+      "allowable_purposes": ["News reporting", "Analysis", "Education"],
+      "denied_purposes": ["Fabrication or dissemination of fake news", "Incitement of violence or hate speech"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Literature",
+      "allowable_purposes": ["Education", "Literary analysis", "Creative inspiration"],
+      "denied_purposes": ["Plagiarism", "Unauthorized commercial use"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Social Media",
+      "allowable_purposes": ["Research", "Trend analysis", "Understanding informal language"],
+      "denied_purposes": ["Targeted harassment", "Spreading disinformation", "Violating privacy rights"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Technical Documents",
+      "allowable_purposes": ["Research", "Education", "Professional development"],
+      "denied_purposes": ["Unauthorized use for commercial gain", "Reverse engineering for malicious purposes"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Dialogues and Conversations",
+      "allowable_purposes": ["Linguistic analysis", "Conversational AI development", "Research"],
+      "denied_purposes": ["Invasion of privacy", "Unauthorized recording or sharing of personal conversations"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Instructional Materials",
+      "allowable_purposes": ["Education", "Training", "Skill development"],
+      "denied_purposes": ["Unauthorized commercial use", "Plagiarism"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Websites and Blogs",
+      "allowable_purposes": ["Research", "Education", "Content analysis"],
+      "denied_purposes": ["Unauthorized reproduction for commercial gain", "Plagiarism", "Spreading malware"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Legal Documents",
+      "allowable_purposes": ["Legal research", "Education", "Compliance"],
+      "denied_purposes": ["Unauthorized dissemination", "Misrepresentation", "Violating attorney-client privilege"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Multimedia Transcripts",
+      "allowable_purposes": ["Research", "Education", "Accessibility"],
+      "denied_purposes": ["Unauthorized reproduction for commercial gain", "Copyright infringement"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Scientific Papers",
+      "allowable_purposes": ["Research", "Education", "Advancing scientific knowledge"],
+      "denied_purposes": ["Plagiarism", "Fraudulent publication", "Misrepresentation of findings"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Financial Reports",
+      "allowable_purposes": ["Financial analysis", "Investment research", "Regulatory compliance"],
+      "denied_purposes": ["Insider trading", "Financial fraud", "Unauthorized dissemination of confidential information"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Healthcare Records",
+      "allowable_purposes": ["Medical research", "Patient care", "Healthcare policy development"],
+      "denied_purposes": ["Violation of patient privacy", "Medical malpractice", "Unauthorized access to sensitive information"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Academic Journals",
+      "allowable_purposes": ["Research", "Scholarly communication", "Academic discourse"],
+      "denied_purposes": ["Plagiarism", "Academic misconduct", "Fraudulent publication"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Historical Documents",
+      "allowable_purposes": ["Historical research", "Education", "Preservation of cultural heritage"],
+      "denied_purposes": ["Fabrication of historical narratives", "Distortion of historical facts", "Cultural appropriation"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Government Publications",
+      "allowable_purposes": ["Policy analysis", "Public information dissemination", "Governmental transparency"],
+      "denied_purposes": ["Misrepresentation of government policies", "Dissemination of classified information", "Undermining national security"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    },
+    {
+      "purpose": "Consumer Reviews",
+      "allowable_purposes": ["Market research", "Product development", "Consumer advocacy"],
+      "denied_purposes": ["False advertising", "Manipulation of consumer opinions", "Defamation"],
+      "processing_types": ["Simple Concatenation", "Feature-based Combination", "Model Ensembles", "Multi-task Learning"]
+    }
+  ]
+}
